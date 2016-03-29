@@ -1,43 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <action button="X" keyCode="1" triggerEvent="onPressed">
-    <type delay="500">x</type>
-    <type>X</type>
+  <action button="X" keyCode="1" triggerEvent="onPressed">ww
+    <keyType delay="500">x</keyType>
+    <keyType>X</keyType>
   </action>
   <action button="X" keyCode="1" triggerEvent="onReleased">
-    <type delay="500">x</type>
+    <keyType delay="500" repeat="3">x</keyType>
   </action>
   <action button="A" keyCode="2" triggerEvent="onDown">
-    <type>a</type>
+    <keyType>a</keyType>
+  </action>
+  <action button="B" keyCode="4" triggerEvent="onPressed">
+    <keyDown>w</keyDown>
   </action>
   <action button="B" keyCode="4" triggerEvent="onReleased">
-    <type>b</type>
+    <keyUp>w</keyUp>
   </action>
   <action button="Y" keyCode="8" triggerEvent="onPressed">
-    <type>y</type>
+    <keyType>y</keyType>
   </action>
   <action button="L" keyCode="16" triggerEvent="onPressed">
-    <type>l</type>
+    <keyType>l</keyType>
   </action>
   <action button="R" keyCode="32" triggerEvent="onPressed">
-    <type>r</type>
+    <keyType>r</keyType>
   </action>
   <action button="Z" keyCode="128" triggerEvent="onPressed">
-    <type>z</type>
+    <keyType>z</keyType>
   </action>
   <action button="Start" keyCode="512" triggerEvent="onPressed">
-    <type>s</type>
+    <keyType>s</keyType>
   </action>
   <action button="Up" keyCode="4096" triggerEvent="onPressed">
-    <type>U</type>
+    <keyType>U</keyType>
   </action>
   <action button="Right" keyCode="8192" triggerEvent="onPressed">
-    <type>R</type>
+    <keyType>R</keyType>
   </action>
   <action button="Down" keyCode="16384" triggerEvent="onPressed">
-    <type>D</type>
+    <keyType>D</keyType>
   </action>
   <action button="Left" keyCode="32768" triggerEvent="onPressed">
-    <type>L</type>
+    <keyType>L</keyType>
   </action>
 </root>

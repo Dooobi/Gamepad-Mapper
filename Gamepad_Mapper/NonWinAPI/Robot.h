@@ -3,7 +3,7 @@
 
 #include "Gamepad.h"
 #include "Action.h"
-#include "TypeAction.h"
+#include "KeyAction.h"
 #include "tinyxml2.h"
 #include <map>
 #include <vector>

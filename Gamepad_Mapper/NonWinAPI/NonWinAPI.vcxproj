@@ -69,14 +69,14 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Robot.cpp" />
     <ClCompile Include="tinyxml2.cpp" />
-    <ClCompile Include="TypeAction.cpp" />
+    <ClCompile Include="KeyAction.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Action.h" />
     <ClInclude Include="Gamepad.h" />
     <ClInclude Include="Robot.h" />
     <ClInclude Include="tinyxml2.h" />
-    <ClInclude Include="TypeAction.h" />
+    <ClInclude Include="KeyAction.h" />
   </ItemGroup>
   <ItemGroup>
     <Xml Include="config.xml">

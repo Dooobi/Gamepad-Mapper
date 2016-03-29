@@ -28,14 +28,23 @@ Robot::Robot(int gamepadNumber) {
 unique_ptr<Action> Robot::makeAction(tinyxml2::XMLElement* actionTypeElement, string triggerEvent) {
 	string type = actionTypeElement->Value();
 
-	if (type == "type") {
+	if (type == "keyType") {
 		string text = actionTypeElement->FirstChild()->ToText()->Value();
-		//cout << "Making TypeAction(" << text << ")" << endl;
-		return unique_ptr<Action>(new TypeAction(text, triggerEvent));
+		return unique_ptr<Action>(new KeyAction(text, triggerEvent, KeyAction::keyType));
 	}
+	else if (type == "keyDown") {
+		string text = actionTypeElement->FirstChild()->ToText()->Value();
+		return unique_ptr<Action>(new KeyAction(text, triggerEvent, KeyAction::keyDown));
+	}
+	else if (type == "keyUp") {
+		string text = actionTypeElement->FirstChild()->ToText()->Value();
+		return unique_ptr<Action>(new KeyAction(text, triggerEvent, KeyAction::keyUp));
+	}
+
+	return NULL;	// This will lead to errors
 }
 
-void Robot::process() {	// Error
+void Robot::process() {
 	gamepad.update();
 	
 	for (map<int, vector<unique_ptr<Action>>>::iterator it = actionMap.begin(); it != actionMap.end(); it++) {
