@@ -16,5 +16,6 @@ public:
 	static const int keyUp = 2;
 	KeyAction(string text, string triggerEvent, int typeMode);
 	void execute() override;
+	static void typeStr(const char* lpszString);
 };
 #endif

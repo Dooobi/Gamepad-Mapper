@@ -17,7 +17,7 @@
     <keyUp>w</keyUp>
   </action>
   <action button="Y" keyCode="8" triggerEvent="onPressed">
-    <keyType>y</keyType>
+    <keyType>Ohhhhhh yaaaah! Look at it go! Roll 0ut the Barrel. Feel it in your bones.</keyType>
   </action>
   <action button="L" keyCode="16" triggerEvent="onPressed">
     <keyType>l</keyType>
